@@ -12,7 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="b9c-W4-kzf">
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="b9c-W4-kzf" customClass="PostCell" customModule="TableView_demo" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="b9c-W4-kzf" id="0Z8-Yz-g5n">
@@ -42,6 +42,10 @@
                     <constraint firstItem="iP6-12-CVR" firstAttribute="trailing" secondItem="0Z8-Yz-g5n" secondAttribute="trailingMargin" id="rva-XE-Cq0"/>
                 </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="subtitle" destination="8YQ-mK-qMC" id="OAB-vc-9Vg"/>
+                <outlet property="title" destination="iP6-12-CVR" id="ZSY-8S-qBh"/>
+            </connections>
             <point key="canvasLocation" x="-10.5" y="-81"/>
         </tableViewCell>
     </objects>

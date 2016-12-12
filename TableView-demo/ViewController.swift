@@ -48,15 +48,10 @@ UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        
-        let titleLabel = cell.viewWithTag(1) as! UILabel
-        let subtitleLabel = cell.viewWithTag(2) as! UILabel
-        
-        titleLabel.text = blogPosts[indexPath.row].title
-        
-        subtitleLabel.text = blogPosts[indexPath.row].subtitle
-        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! PostCell
+        cell.title.text = blogPosts[indexPath.row].title
+        cell.subtitle.text = blogPosts[indexPath.row].subtitle
+//        cell.blogPost = blogPosts[indexPath.row]
         return cell
     }
     
