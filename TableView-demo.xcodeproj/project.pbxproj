@@ -14,6 +14,7 @@
 		2BB1DD811DFF3CF700680C6B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BB1DD7F1DFF3CF700680C6B /* LaunchScreen.storyboard */; };
 		2BB1DD8C1DFF3CF700680C6B /* TableView_demoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB1DD8B1DFF3CF700680C6B /* TableView_demoTests.swift */; };
 		2BB1DD971DFF3CF700680C6B /* TableView_demoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB1DD961DFF3CF700680C6B /* TableView_demoUITests.swift */; };
+		2BB1DDA51DFF68FC00680C6B /* PostCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2BB1DDA41DFF68FC00680C6B /* PostCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		2BB1DD921DFF3CF700680C6B /* TableView-demoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TableView-demoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BB1DD961DFF3CF700680C6B /* TableView_demoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableView_demoUITests.swift; sourceTree = "<group>"; };
 		2BB1DD981DFF3CF700680C6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2BB1DDA41DFF68FC00680C6B /* PostCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PostCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				2BB1DD7D1DFF3CF700680C6B /* Assets.xcassets */,
 				2BB1DD7F1DFF3CF700680C6B /* LaunchScreen.storyboard */,
 				2BB1DD821DFF3CF700680C6B /* Info.plist */,
+				2BB1DDA41DFF68FC00680C6B /* PostCell.xib */,
 			);
 			path = "TableView-demo";
 			sourceTree = "<group>";
@@ -235,6 +238,7 @@
 				2BB1DD811DFF3CF700680C6B /* LaunchScreen.storyboard in Resources */,
 				2BB1DD7E1DFF3CF700680C6B /* Assets.xcassets in Resources */,
 				2BB1DD7C1DFF3CF700680C6B /* Main.storyboard in Resources */,
+				2BB1DDA51DFF68FC00680C6B /* PostCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -503,6 +507,7 @@
 				2BB1DD9D1DFF3CF700680C6B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2BB1DD9E1DFF3CF700680C6B /* Build configuration list for PBXNativeTarget "TableView-demoTests" */ = {
 			isa = XCConfigurationList;
@@ -511,6 +516,7 @@
 				2BB1DDA01DFF3CF700680C6B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2BB1DDA11DFF3CF700680C6B /* Build configuration list for PBXNativeTarget "TableView-demoUITests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +525,7 @@
 				2BB1DDA31DFF3CF700680C6B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

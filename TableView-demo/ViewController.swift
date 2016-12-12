@@ -22,6 +22,10 @@ UITableViewDataSource {
         tableView.delegate = self
         tableView.dataSource = self
         
+        let nib = UINib(nibName: "PostCell", bundle: nil)
+        
+        tableView.register(nib, forCellReuseIdentifier: "cell")
+        
         blogPosts = [
             Post(title: "iOS Introduction", subtitle: "Learn iOS and Swift"),
             Post(title: "NodeJS Course", subtitle: "Learn Nodejs from scratch"),
@@ -46,11 +50,18 @@ UITableViewDataSource {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         
-        cell.textLabel?.text = blogPosts[indexPath.row].title
+        let titleLabel = cell.viewWithTag(1) as! UILabel
+        let subtitleLabel = cell.viewWithTag(2) as! UILabel
         
-        cell.detailTextLabel?.text = blogPosts[indexPath.row].subtitle
+        titleLabel.text = blogPosts[indexPath.row].title
+        
+        subtitleLabel.text = blogPosts[indexPath.row].subtitle
         
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 80
     }
 
 }
